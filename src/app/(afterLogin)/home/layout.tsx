@@ -1,11 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-const HomeLayout = async ({
-  children,
-}: {
-  children: React.ReactNode;
-}): Promise<JSX.Element> => {
-  return <div>{children}</div>;
-};
-
-export default HomeLayout;
+export default function HomeLayout({ children }: { children: ReactNode }) {
+  return (
+    <div>
+      <h3>홈 레이아웃</h3>
+      {children}
+    </div>
+  );
+}
